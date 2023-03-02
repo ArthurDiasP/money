@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<title>Ínicio</title>
+</head>
+<body>
+  
+  <img src="Logo.png" class="Logo">
+  
+<h1 class="title">BEM-VINDO AO <span class="subtitle">CRAQUE</span></h1>
+
+<p>Vem ganhar muito dinheiro com apenas R$0,50. Clique nesse botão vermelho e não perca seu tempo!</p>
+
+<a href="login.html" class="button-link"><button class="button">LOGIN</button></a>
+
+<div class="navbar">
+  <a href="quemsomos.html"class="material-symbols-outlined">
+badge</a>
+  <a href="indicar.html" class="material-symbols-outlined">
+groups</a>
+  <a href="termos.html" class="material-symbols-outlined">
+library_books</a>
+</div>
+
+<style>
+
+/* Default styles */
+
+body {
+  background-color: #152349;
+}
+
+.Logo {
+position: fixed;
+  bottom: 0;
+  width: 20%;
+  left:0%;
+  top: 2%;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-family: Roboto;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #e5132a;
+  font-family: Roboto;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: Roboto;
+  color: white;
+}
+
+.button-link {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.button {
+  padding: 1.5rem 5.5rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 22px;
+}
+
+.material-symbols-outlined {
+  width:85px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #439775;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left:0%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.navbar a:hover {
+  background: #0078C2;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-top: 7rem;
+  }
+
+  .subtitle {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+
+  .button {
+    font-size: 22px;
+  }
+}
+
+  
+</style>
+
+</body>
+</html>
