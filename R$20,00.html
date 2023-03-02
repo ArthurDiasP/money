@@ -1,0 +1,113 @@
+<div class="container">
+  <h1>DETALHES DO PEDIDO</h1>
+  <h2>ESCANEIE O QR CODE</h2>
+  
+  <img src="R$20,00.jpg" class="QR">
+  
+  <h3>Ou COPIE E COLE o código abaixo</h3>
+  
+<input type="text" name="texto" id="texto" placeholder="Digite alguma coisa" value="00020126330014BR.GOV.BCB.PIX011153786301859520400005303986540520.005802BR5919Arthur Dias Pereira6009Sao Paulo62080504JGV1630462D7" readonly/>
+
+ <button onclick="copiarTexto()">COPIAR</button>
+  
+  <h5>Após ter efetuado o pagamento. Clique nessa imagem do Whatsapp</h5>
+  
+ <a href="https://chat.whatsapp.com/IsDwHPdQzVt9yGMFtbfKKg"><img src="Whatsapp.png" class="whatsapp"></a>
+</div>
+
+<style>
+
+body {
+  background:#152349;
+  text-align-last: center;
+font-family: Roboto;
+}
+  
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: dodgerblue;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+img.QR {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+h5 {
+font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+img.whatsapp {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  h3 {
+    font-size: 1em;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+  }
+  
+  .QR {
+    border-radius: 5px;
+  }
+  
+  .whatsapp{
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+}
+  
+</style>
+
+<script>
+
+// Type 1
+function copiarTexto() {
+        let textoCopiado = document.getElementById("texto");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("Texto Copiado: " + textoCopiado.value);
+    }
+
+
+</script>
